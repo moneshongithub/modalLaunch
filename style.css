@@ -1,0 +1,61 @@
+/* modal launch using js */
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(99,89,89);
+    z-index: 999;
+} 
+#main #modal{
+    opacity: 0;
+    pointer-events: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+    height: 200px;
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#modal #text{
+    margin: 10px 20px;
+}
+#text h2{
+    margin: 20px 10px;
+    font-size: 40px;
+}
+#text p{
+    margin: 20px;
+}
+button{
+    position: absolute;
+    left: 10%;
+    background-color: rgb(52,169,219);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+
+}
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(52,169,219);
+        
+}
